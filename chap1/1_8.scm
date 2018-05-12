@@ -1,4 +1,3 @@
-```scheme
 (define (cube-root x)
   (define (good-enough? guess newguess)
     (< (/ (abs (- guess newguess)) guess) 0.0001))
@@ -12,4 +11,3 @@
 
 (define (cube x)
   (* x x x))
-```
