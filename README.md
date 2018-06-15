@@ -1,4 +1,2 @@
-# SICP soutions
-I am now working through the second edition of Structure and
-Interpretation of Computer Programs. These are my solutions
-to the problems in the book.
+# SICP soution
+These are my solutions to Structure and Interpretation of Computer Programs, 2nd edition. 
