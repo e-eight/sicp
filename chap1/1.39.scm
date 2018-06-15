@@ -1,0 +1,10 @@
+(define (approx-tan x terms)
+  (define (cont-frac num denom terms)
+    (define (iter index result)
+      (if (= index 0)
+	  result
+	  (iter (- index 1) (/ (num index) (+ (denom index) result)))))
+    (iter terms 0))
+  (cont-frac (lambda(index) (if (= index 1) x (- (* x x))))
+	     (lambda(index) (- (* 2 index) 1))
+	     terms))
