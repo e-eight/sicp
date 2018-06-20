@@ -1,0 +1,20 @@
+Let the numbers be \( x = x_0 ± Δx \), and \( y = y_0 ± Δy \), where the $Δ$
+quantities are the widths representating th uncertainty of the numbers.
+Then,
+$$ x + y = x_0 ± Δx + y_0 ± Δy = (x_0 + y_0) ± (Δx + Δy). $$
+Thus, the width of the sum is the sum of the widths. Similarly
+$$ x - y = (x_0 - y_0) ± (Δx - Δy). $$
+
+Multiplication and division are somewhat different.
+$$ xy = (x_0 ± Δx)(y_0 ± Δy) = (x_0y_0 + ΔxΔy) ± (x_0Δy + Δxy_0). $$
+Not only do the width of the product depend on the central values of $x$ and
+$y$, but interestingly the central value of the product depend on the widths
+$Δx$ and $Δy$.
+Division is slightly more complicated and we need to use the Taylor expansion of
+$1/(1-z)$ for $|z|<1$.
+$$ \frac{x}{y} = \frac{x_0 ± Δx}{y_0 ± Δy} 
+= \frac{x_0}{y_0} \frac{1 ± \frac{Δx}{x_0}}{1 ± \frac{Δy}{y_0}} 
+= \frac{x_0}{y_0} \left( 1 ± \frac{Δx}{x_0} \right) \left( 1 ∓ \frac{Δy}{y_0}
+\right)
+= \left( \frac{x_0}{y_0} - \frac{ΔxΔy}{y_0^2} \right) ± \left( \frac{Δx}{x_0} -
+\frac{Δy}{y_0} \right). $$
